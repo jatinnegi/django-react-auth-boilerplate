@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 60% !important;
+  min-width: 350px;
+}
+
+.alert-container {
+  position: absolute;
+  width: 80%;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.alert-container * {
+  margin: 5px 0;
+}
+
+.alert {
+  position: relative;
+}
+
+.alert-remove-cross {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-90%);
+  cursor: pointer;
+}
