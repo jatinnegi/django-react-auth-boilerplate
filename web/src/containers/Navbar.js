@@ -8,7 +8,7 @@ const Navbar = ({ auth: { isAuthenticated, user }, logout }) => {
   const [currentPath, setCurrentPath] = useState("");
 
   useEffect(() => {
-    setCurrentPath(window.location.href.split("#/")[1]);
+    setCurrentPath(window.location.href.split("/").pop());
   }, []);
 
   const guestLinks = (
@@ -40,6 +40,7 @@ const Navbar = ({ auth: { isAuthenticated, user }, logout }) => {
             <Link to="/update-profile" className="nav-link">
               <img
                 src={user.profile_image}
+                alt=""
                 style={{
                   height: "25px",
                   width: "25px",
@@ -63,9 +64,9 @@ const Navbar = ({ auth: { isAuthenticated, user }, logout }) => {
   );
   return (
     <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-      <a className="navbar-brand" href="#">
+      <Link className="navbar-brand" to="/">
         Navbar
-      </a>
+      </Link>
       <button
         className="navbar-toggler"
         type="button"
