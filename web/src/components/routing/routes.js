@@ -3,11 +3,11 @@ import { Route, Switch } from "react-router-dom";
 import PrivateRoute from "./PrivateRoute";
 
 // Components
-import Alerts from "./containers/Alerts";
-import SignIn from "./containers/SignIn";
-import SignUp from "./containers/SignUp";
-import Profile from "./containers/Profile";
-import ProfileUpdate from "./containers/ProfileUpdate";
+import Alerts from "../../containers/Alerts";
+import SignIn from "../../containers/SignIn";
+import SignUp from "../../containers/SignUp";
+import Profile from "../../containers/Profile";
+import ProfileUpdate from "../../containers/ProfileUpdate";
 
 const routes = () => {
   return (

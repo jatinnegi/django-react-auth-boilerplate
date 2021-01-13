@@ -4,7 +4,7 @@ import setAuthToken from "./utils/setAuthToken";
 
 // Components
 import Navbar from "./containers/Navbar";
-import BaseRoutes from "./routes";
+import BaseRoutes from "./components/routing/routes";
 
 const App = () => {
   useEffect(() => {
